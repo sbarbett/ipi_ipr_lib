@@ -40,7 +40,8 @@ class ApiConnection:
             uri = self.base_url + self.ipr_endp + ip + '?' + query
         else:
             uri = self.base_url + self.ipi_endp + ip + '?' + query
-        print uri
+        # For debugging
+        # print uri
         req = urllib2.Request(uri)
         time.sleep(2)
         try:
